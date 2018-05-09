@@ -1,5 +1,13 @@
 body {
   background: url(/assets/img/background.jpg);
+  background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#testBox {
+  border-color: red;
+  background-color: green;
+  width: 33%;
+  height: 40%;
 }
