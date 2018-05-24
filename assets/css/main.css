@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body {
   background-color: #2a2a2a;
   overflow: hidden;
@@ -9,36 +11,50 @@ body {
   background-origin: border-box;
 }
 
-.box {
-  display: grid;
-  grid-template-columns: 30vw 35vw 20vw;
-  grid-template-rows: 19vh 39vh 15vh;
-  color: white;
+div {
   width: 100vw;
-  height: 90vh;
-}
-
-.nav {
+  height: 100vh;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
-  width: 100vw;
-  height: 10vh;
 }
 
-.nav > div {
-  width:20vw;
-  height:10vh;
+div span {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
 }
 
-iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: none;
+#skele {
+  font-size: 38pt;
+  letter-spacing: 10pt;
 }
 
-img {
-  max-width: 100%;
-  max-height: 100%;
+#soon {
+  font-size: 13pt;
+  letter-spacing: 2pt;
+  padding-top: 2vh;
 }
